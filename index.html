@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>NC state symbols quiz</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+   <section class="start-page">
+    <header class = "title-banner" role="banner">
+      <h1>Welcome to the North Carolina State Symbols Challenge!</h1>
+    </header>
+   </section>
+  <main>
+   <!--<section class="start-page">-->
+   <div class="txt-center">
+      <p class="txt">Are you a true Tarheel? Well, here is your chance to prove it! Click below to take a quiz to see how well you know your state symbols.</p>
+    <!--does the button below have to be "hidden" in order to make it "disappear" after use?-->
+      <button id="start-button">Take Quiz!</button> 
+   </div>
+   <section id= "results-page" class="hidden">
+    <div class="js-final-results txt-center">
+    </div>
+     <button class="hidden" id="retake-button">Take it again!</button>
+   </section>
+    <div class="row">
+     <div class="col 6">
+      <section class="popup" data-popup="popup-feedback">
+       <div class="popup-inner">
+        <h2 id="txt-feedback">
+        </h2>
+       </div>
+      </section>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-6">
+      <div id="my-quiz" class="question hidden">
+       <h3 class="js-question-text">
+        <span>(1/10)<!--this should display question number--></span>
+       </h3>
+      <form id="question-form" action="some end server" method="post">
+        <label class="answer">
+          <input type="radio" name="answerChoice" required value="<!--answer choice A-->">
+           <span><!--answer choice A...why does this need to be here?--> </span>
+        </label>
+        <label class="answer">
+          <input type="radio" name="answerChoice" required value="<!--answer choice B-->">
+           <span><!--answer choice B--> </span>
+         </label>
+         <label class="answer">
+          <input type="radio" name="answerChoice" required value="<!--answer choice C-->">
+           <span><!--answer choice C--> </span>
+         </label>
+         <label class="answer">
+           <input type="radio" name="answerChoice" required value="<!--answer choice D-->">
+           <span><!--answer choice D--> </span>
+         </label>
+         <button id="submit-answer" type="submit" data-popup-open="popup-feedback">Next</button>
+      </form>
+      </div>
+      </div>
+     </div>
+  </main>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="index.js"></script>
+  </body>
+</html> 
